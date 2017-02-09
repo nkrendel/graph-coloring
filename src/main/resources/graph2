@@ -1,0 +1,32 @@
+node 13: yellow
+node 14:
+node 15: green
+node 16: yellow
+node 17: red
+node 18:
+node 19:
+node 20:
+node 21: red
+node 22:
+node 23: green
+
+{
+	{node13, node14},
+	{node13, node15},
+	{node14, node15},
+	{node14, node17},
+	{node15, node17},
+	{node15, node19},
+	{node16, node17},
+	{node16, node19},
+	{node17, node18},
+	{node17, node19},
+	{node18, node19},
+	{node18, node20},
+	{node18, node22},
+	{node19, node20},
+	{node19, node22},
+	{node20, node21},
+	{node20, node22},
+	{node22, node23}
+}

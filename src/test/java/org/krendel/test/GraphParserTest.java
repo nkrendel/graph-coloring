@@ -24,6 +24,10 @@ public class GraphParserTest {
             "\t{node3, node4}\n" +
             "}\n";
 
+    /**
+     * Test basic functionality of parser by verifying we got the right number of nodes, check specific colors,
+     * and check that node3 correctly is linked to 3 different nodes (node1, node2, and node4).
+     */
     @Test
     public void testParser()
     {
@@ -33,5 +37,6 @@ public class GraphParserTest {
         assertEquals(4, graph.getNodes().size());
         assertEquals(GraphNode.Color.RED, graph.getNode("node2").getColor());
         assertNotNull(graph.getNode("node3"));
+        assertEquals("node3 should be related to 3 nodes", 3, graph.getNode("node3").getRelations().size());
     }
 }

@@ -36,6 +36,9 @@ public class GraphColorerTest {
             "\t{node4, node5}\n" +
             "}\n";
 
+    /**
+     * Test that the uncolored node node3 in the sample graph got colored the correct color (green)
+     */
     @Test
     public void testColoring()
     {
@@ -49,6 +52,9 @@ public class GraphColorerTest {
         assertEquals("node3 wasn't colored!", GraphNode.Color.GREEN, colored.getNode("node3").getColor());
     }
 
+    /**
+     * Test that node5 in the ambiguous sample graph was correctly marked as being in error
+     */
     @Test
     public void testErrorNode()
     {

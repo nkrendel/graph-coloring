@@ -22,6 +22,9 @@ public class GraphPrinterTest {
             "\t{node3, node4}\n" +
             "}\n";
 
+    /**
+     * Test that printing the sample graph results in output that is identical to the input.
+     */
     @Test
     public void testPrinter()
     {

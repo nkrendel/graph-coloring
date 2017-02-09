@@ -10,7 +10,9 @@ Produce a new file with the remaining nodes assigned a color that works with the
 node1: yellow
 node2: red
 node3:
-node4: blue  {
+node4: blue
+
+{
     {node1, node3},
     {node2, node3},
     {node3, node4}
@@ -22,7 +24,9 @@ you should produce the following file:  node1: yellow
 ```
 node2: red
 node3: green
-node4: blue  {
+node4: blue
+
+{
     {node1, node3},
     {node2, node3},
     {node3, node4}

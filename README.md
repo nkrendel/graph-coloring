@@ -6,11 +6,11 @@ In each graph, only assign nodes colors if they can be no other color. If a node
 
 Produce a new file with the remaining nodes assigned a color that works with the rest of the graph. We will diff it with our solution file. For example, with an input file as follows: 
 
-BUILDING
+#### BUILDING
 
 mvn clean package
 
-RUNNING
+#### RUNNING
 
 java -jar target/graph-coloring-1.0-SNAPSHOT.jar < {inputfile}
 

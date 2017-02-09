@@ -19,9 +19,10 @@ node4: blue
 }
 ```
 
-you should produce the following file:  node1: yellow
+you should produce the following file:
 
 ```
+node1: yellow
 node2: red
 node3: green
 node4: blue
@@ -32,6 +33,16 @@ node4: blue
     {node3, node4}
 } 
 ```
+
+##### Ambiguous graphs: 
+
+node5 is connected to each other color    
+node5: err
+
+nodes 1 and 2 can each be either red or yellow
+
+node1: err
+node2: err 
 
 #### BUILDING
 

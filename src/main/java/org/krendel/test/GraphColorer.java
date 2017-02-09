@@ -5,18 +5,16 @@ import org.krendel.test.model.GraphNode;
 
 /**
  * Color a graph
+ *
+ * Basic flow:
+ * 1. loop through nodes until we find a node that doesn't have a color
+ * 2. look at its related nodes and remove each possible color
+ * 3. if only one possible color is left, set the node color
+ * 4. continue looping as long as we've set at least one node color
+ * 5. loop again and mark unset nodes as 'err'
  */
 public class GraphColorer {
     public static Graph color(Graph graph) {
-        /*
-         * logic:
-         * 1. loop through nodes until we find a node that doesn't have a color
-         * 2. look at its related nodes and remove each possible color
-         * 3. if only one possible color is left, set the node color
-         * 4. continue looping as long as we've set at least one node color
-         * 5. loop again and mark unset nodes as 'err'
-         */
-
         boolean colorSet;
         do {
             colorSet = false;   // have we set a color in this iteration

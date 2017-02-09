@@ -1,0 +1,12 @@
+node1:
+node2:
+node3: green
+node4: blue
+
+{
+	{node1, node2},
+	{node1, node3},
+	{node1, node4},
+	{node2, node3},
+	{node2, node4}
+}

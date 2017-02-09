@@ -6,6 +6,29 @@ In each graph, only assign nodes colors if they can be no other color. If a node
 
 Produce a new file with the remaining nodes assigned a color that works with the rest of the graph. We will diff it with our solution file. For example, with an input file as follows: 
 
+```
+node1: yellow
+node2: red
+node3:
+node4: blue  {
+    {node1, node3},
+    {node2, node3},
+    {node3, node4}
+}
+```
+
+you should produce the following file:  node1: yellow
+
+```
+node2: red
+node3: green
+node4: blue  {
+    {node1, node3},
+    {node2, node3},
+    {node3, node4}
+} 
+```
+
 #### BUILDING
 
 mvn clean package
